@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Umbra | 6 Clásicos del Terror</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#portada" class="logo">
+        <span class="logo-icon">🕯️</span>
+        <span class="logo-title">BIBLIOTECA UMBRA</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#portada">Inicio</a>
+        <a href="#libros">Libros</a>
+        <a href="#carrito" class="cart-link">
+           Carrito (<span id="cart-count">0</span>)
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portada / Hero -->
+  <section class="hero" id="portada">
+    <div class="hero-content">
+      <h1 class="hero-title">ADÉNTRATE EN LA <span class="blood-text">OSCURIDAD</span></h1>
+      <p class="hero-desc">Una cuidada selección de 6 obras esenciales de la literatura de terror.</p>
+      <div class="hero-buttons">
+        <a href="#libros" class="btn btn-crimson">Ver los 6 Libros 💀</a>
+        <a href="#carrito" class="btn btn-ghost">Ir al Carrito 🛒</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de 6 Libros -->
+  <section class="books-section" id="libros">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Colección</span>
+        <h2>6 Libros de Terror</h2>
+        <p>Cada ejemplar tiene un costo de $100.00. Añade a tu carrito los que te atrevas a leer.</p>
+      </div>
+      <div class="books-grid" id="books-grid">
+        <!-- Renderizado dinámicamente desde script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Apartado del Carrito de Compras -->
+  <section class="cart-section" id="carrito">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Tus Libros</span>
+        <h2>Carrito de Compras</h2>
+      </div>
+
+      <div class="cart-box">
+        <ul class="cart-list" id="cart-items">
+          <!-- Elementos del carrito -->
+        </ul>
+        <div class="cart-bottom">
+          <div class="cart-total">Total: <strong id="cart-total">$0.00</strong></div>
+          <button class="btn btn-crimson" id="btn-checkout" onclick="checkout()">Comprar 💀</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo">
+        <span class="logo-icon">🕯️</span>
+        <span class="logo-title">BIBLIOTECA UMBRA</span>
+      </div>
+      <p>© 2026 Biblioteca Umbra. 6 tomos consagrados al terror.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
